@@ -1,7 +1,6 @@
 from tkinter import *
 import math
 
-# ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
@@ -12,10 +11,6 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 
-
-# ---------------------------- TIMER RESET ------------------------------- #
-
-# ---------------------------- TIMER MECHANISM ------------------------------- #
 
 def start_timer():
     start_button["state"] = DISABLED
@@ -35,9 +30,6 @@ def start_timer():
         counter(work_sec)
 
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
-
-
 def counter(count):
     count_min = math.floor(count / 60)
     count_sec = count % 60
@@ -50,7 +42,6 @@ def counter(count):
         start_timer()
 
 
-# ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title('Pomodoro')
 window.config(padx=100, pady=50, bg=YELLOW)
